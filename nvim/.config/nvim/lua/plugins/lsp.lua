@@ -294,6 +294,7 @@ return {
 			"prettier", -- Used to format JavaScript, TypeScript, HTML, and other code
 			"ruff", -- Used to format Python
 			-- "typescript-language-server",
+			"shfmt",
 		})
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
