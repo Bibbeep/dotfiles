@@ -89,6 +89,7 @@ echo "Setting up .gitconfig..."
 git config --global user.email "habibalfrb@gmail.com"
 git config --global user.name "Bibbeep"
 git config --global core.pager delta
+git config --global core.editor nvim
 git config --global interactive.diffFilter 'delta --color-only'
 git config --global delta.navigate true
 git config --global delta.line-numbers true
