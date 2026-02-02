@@ -123,11 +123,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 echo "zsh plugins installed!"
 
 # Install powerlevel10k
-echo "Installing powerlevel10k..."
-
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$home_dir/.oh-my-zsh/custom}/themes/powerlevel10k"
-
-echo "powerlevel10k installed!"
+# echo "Installing powerlevel10k..."
+#
+# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$home_dir/.oh-my-zsh/custom}/themes/powerlevel10k"
+#
+# echo "powerlevel10k installed!"
 
 # Install TPM
 echo "Installing TPM..."
