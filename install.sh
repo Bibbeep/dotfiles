@@ -263,7 +263,19 @@ fi
 cd $home_dir/dotfiles || exit
 
 echo "Stowing dotfiles..."
-stow -t $home_dir tmux vim nvim git zsh
+declare -a dotfiles=(
+	tmux
+	vim
+	nvim
+	git
+	zsh
+	ghostty
+	clang-format
+)
+
+for dotfile in ${dotfiles[@]}; do
+	stow -t $home_dir $dotfile
+done
 
 echo "dotfiles setup completed!"
 
