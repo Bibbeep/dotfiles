@@ -31,7 +31,8 @@
 # # All of these are identical:
 # ghostty +list-themes
 theme = "Ayu"
-font-family = "CaskaydiaMono NFM SemiBold"
+# font-family = "CaskaydiaMono NFM SemiBold"
+font-family = "CaskaydiaCove Nerd Font"
 window-decoration = true
 background-opacity = 1
 window-padding-x = 10
