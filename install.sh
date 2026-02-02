@@ -60,6 +60,7 @@ declare -a packages=(
 	gcc
 	gcc-c++
 	clang-tools-extra
+	valgrind
 	lynx
 )
 

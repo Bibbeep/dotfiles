@@ -108,7 +108,7 @@ return {
 					auto_show_delay_ms = 500,
 					window = {
 						max_width = 50,
-						winblend = 100,
+						-- winblend = 100,
 						border = "rounded",
 					},
 				},
@@ -127,7 +127,7 @@ return {
 					show_on_insert_on_trigger_character = true,
 				},
 				window = {
-					-- winblend = 100,
+					-- winblend = 50,
 					max_width = 80,
 					border = "rounded", -- Optional: customize appearance
 					-- treesitter_highlighting = true, -- Optional: use treesitter for highlighting
