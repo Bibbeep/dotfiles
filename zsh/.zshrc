@@ -120,7 +120,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -lh -X"
-alias lla="ls -lha -X"
+alias lla="ls -lhA -X"
 alias docker="sudo docker"
 
 export NVM_DIR="$HOME/.nvm"
