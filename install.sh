@@ -59,6 +59,8 @@ declare -a packages=(
 	redis
 	gcc
 	gcc-c++
+	clang-tools-extra
+	lynx
 )
 
 for package in ${packages[@]}; do
@@ -184,6 +186,10 @@ dnf remove -y docker docker-client docker-client-latest docker-common docker-lat
 dnf config-manager -y addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
 dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 systemctl enable --now docker
+
+# Add current user to docker group
+usermod -a -G docker $SUDO_USER
+newgrp docker
 
 echo "Docker Engine installed!"
 

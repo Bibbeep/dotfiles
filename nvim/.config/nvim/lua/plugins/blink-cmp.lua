@@ -108,7 +108,7 @@ return {
 					auto_show_delay_ms = 500,
 					window = {
 						max_width = 50,
-						-- winblend = 100,
+						winblend = 100,
 						border = "rounded",
 					},
 				},

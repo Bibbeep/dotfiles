@@ -15,6 +15,7 @@ return {
 			sh = { "shfmt", lsp_format = "fallback" },
 			bash = { "shfmt", lsp_format = "fallback" },
 			mksh = { "shfmt", lsp_format = "fallback" },
+			c = { "clang-format", lsp_format = "fallback" },
 		},
 		format_on_save = {
 			-- These options will be passed to conform.format()
