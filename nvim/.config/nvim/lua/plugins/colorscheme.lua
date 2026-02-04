@@ -221,7 +221,7 @@ return {
 					}
 				end,
 			})
-			vim.cmd("colorscheme kanagawa-dragon")
+			vim.cmd("colorscheme kanagawa-wave")
 			-- vim.api.nvim_set_hl(0, "NoicePopup", { bg = "#1F1F28" })
 			-- vim.api.nvim_set_hl(0, "NoicePopupBorder", { bg = "#1F1F28" })
 		end,
