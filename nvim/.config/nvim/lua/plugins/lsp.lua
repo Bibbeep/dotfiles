@@ -239,6 +239,7 @@ return {
 			basedpyright = {},
 			clangd = {},
 			roslyn = {},
+			nginx_language_server = {},
 			-- gopls = {},
 			-- pyright = {},
 			-- rust_analyzer = {},
@@ -296,6 +297,7 @@ return {
 			-- "typescript-language-server",
 			"shfmt", -- Used to format Shell Script
 			"clang-format", -- Used to format C
+			"nginx-config-formatter",
 		})
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 

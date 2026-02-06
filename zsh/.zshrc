@@ -120,7 +120,10 @@ ZSH_TMUX_AUTOSTART=true
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -lh -X"
 alias lla="ls -lhA -X"
-alias docker="sudo docker"
+
+# I'm lazy to type sudo everytime
+alias docker="sudo docker" 
+alias nginx="sudo nginx"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -130,5 +133,12 @@ export NVM_DIR="$HOME/.nvm"
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(starship init zsh)"
+
+# pyenv
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+
 
 source $ZSH/oh-my-zsh.sh

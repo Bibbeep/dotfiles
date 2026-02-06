@@ -63,6 +63,20 @@ declare -a packages=(
 	valgrind
 	lynx
 	nginx
+	patch
+	zlib-devel
+	bzip2
+	bzip2-devel
+	readline-devel
+	sqlite
+	sqlite-devel
+	openssl-devel
+	tk8-devel
+	libffi-devel
+	xz-devel
+	libuuid-devel
+	gdbm-libs
+	libnsl2
 )
 
 for package in ${packages[@]}; do
@@ -70,6 +84,16 @@ for package in ${packages[@]}; do
 done
 
 echo "Packages installed!"
+
+# Set pyenv
+echo "Installing pyenv..."
+curl -fsSL https://pyenv.run | bash
+
+# Install and use 3.13, used for installing Nginx LSP
+pyenv install 3.13
+pyenv global 3.13
+
+echo "pyenv installed!"
 
 # Set Neovim as the default editor
 echo "Setting up Neovim as the default editor..."
@@ -280,6 +304,13 @@ for dotfile in ${dotfiles[@]}; do
 done
 
 echo "dotfiles setup completed!"
+
+# Plug install Vim
+echo "Installing vim plugins..."
+
+vim +PlugInstall +qa
+
+echo "Vim plugin installed!"
 
 # Sourcing .tmux.conf
 echo "Sourcing dotfiles..."
