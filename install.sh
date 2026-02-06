@@ -62,6 +62,7 @@ declare -a packages=(
 	clang-tools-extra
 	valgrind
 	lynx
+	nginx
 )
 
 for package in ${packages[@]}; do
