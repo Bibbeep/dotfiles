@@ -54,9 +54,9 @@ vim.opt.scrolloff = 15
 -- Verify "GUI" Support in Terminal
 vim.opt.termguicolors = true
 
--- Add these for undercurl support in tmux/Windows Terminal
-vim.cmd([[let &t_Cs = "\ePtmux;\e\e[4:3m\e\\"]])
-vim.cmd([[let &t_Ce = "\ePtmux;\e\e[4:0m\e\\"]])
+-- Undercurl
+vim.cmd([[let &t_Cs = "\e[4:3m"]])
+vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
 -- Filetypes
 vim.filetype.add({

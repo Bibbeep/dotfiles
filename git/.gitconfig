@@ -17,3 +17,5 @@
 [user]
 	email = habibalfrb@gmail.com
 	name = Bibbeep
+[init]
+	defaultBranch = main

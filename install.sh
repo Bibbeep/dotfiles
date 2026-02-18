@@ -99,6 +99,7 @@ echo "pyenv installed!"
 echo "Setting up Neovim as the default editor..."
 
 export EDITOR=nvim
+export DISPLAY=:0
 
 # Installing NVM and Node.js
 "Installing NVM..."
@@ -111,6 +112,13 @@ nvm install 24
 
 echo "NVM and Node.js installed!"
 
+# Installing TypeScript and NestJS
+echo "Installing TypeScript and NestJS CLI..."
+
+npm i -g typescript @nestjs/cli
+
+echo "TypeScript and NestJS CLI installed!"
+
 # Setting up git
 echo "Setting up .gitconfig..."
 
@@ -122,6 +130,7 @@ git config --global interactive.diffFilter 'delta --color-only'
 git config --global delta.navigate true
 git config --global delta.line-numbers true
 git config --global merge.conflictStyle zdiff3
+git config --global init.defaultBranch main
 
 echo ".gitconfig setup completed!"
 

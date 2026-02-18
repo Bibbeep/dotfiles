@@ -240,6 +240,7 @@ return {
 			clangd = {},
 			roslyn = {},
 			nginx_language_server = {},
+			prismals = {},
 			-- gopls = {},
 			-- pyright = {},
 			-- rust_analyzer = {},
