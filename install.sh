@@ -77,6 +77,7 @@ declare -a packages=(
 	libuuid-devel
 	gdbm-libs
 	libnsl2
+	golang
 )
 
 for package in ${packages[@]}; do
