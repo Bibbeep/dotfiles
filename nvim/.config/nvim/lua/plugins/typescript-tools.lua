@@ -2,7 +2,7 @@ return {
 	"pmizio/typescript-tools.nvim",
 	dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
 	opts = {},
-	ft = { "typescript", "typescriptreact" },
+	ft = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
 	config = function()
 		require("typescript-tools").setup({
 			on_attach = function(client, _bufnr)
