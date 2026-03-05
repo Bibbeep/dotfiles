@@ -3,6 +3,7 @@ return {
 	event = "VeryLazy",
 	opts = { -- set to setup table
 		lazy_load = true,
+		supress_deprecation = true,
 		user_default_options = {
 			RGB = true, -- #RGB hex codes
 			RGBA = true, -- #RGBA hex codes
