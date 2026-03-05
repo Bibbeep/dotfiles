@@ -299,6 +299,7 @@ return {
 			"shfmt", -- Used to format Shell Script
 			"clang-format", -- Used to format C
 			"nginx-config-formatter",
+			"mbake", -- Used to format Makefile
 		})
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 

@@ -96,6 +96,11 @@ pyenv global 3.13
 
 echo "pyenv installed!"
 
+# Install mbake as Makefile formatter and linter
+echo "Installing mbake..."
+pip install mbake
+echo "mbake installed!"
+
 # Set Neovim as the default editor
 echo "Setting up Neovim as the default editor..."
 
