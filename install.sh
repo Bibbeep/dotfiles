@@ -98,8 +98,15 @@ echo "pyenv installed!"
 
 # Install mbake as Makefile formatter and linter
 echo "Installing mbake..."
+
 pip install mbake
+
 echo "mbake installed!"
+echo "Create a mbake config file..."
+
+mbake init
+
+echo "mbake initialized!"
 
 # Set Neovim as the default editor
 echo "Setting up Neovim as the default editor..."
