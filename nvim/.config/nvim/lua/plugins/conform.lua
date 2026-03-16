@@ -17,7 +17,7 @@ return {
 			mksh = { "shfmt", lsp_format = "fallback" },
 			c = { "clang-format", lsp_format = "fallback" },
 			-- nginx = { "nginx-config-formatter", lsp_format = "fallback" },
-			makefile = { "mbake", lsp_format = "fallback" },
+			make = { "bake", lsp_format = "fallback" },
 		},
 		format_on_save = {
 			-- These options will be passed to conform.format()
