@@ -122,7 +122,7 @@ alias ll="ls -lh -X"
 alias lla="ls -lhA -X"
 
 # I'm lazy to type sudo everytime
-alias docker="sudo docker" 
+# alias docker="sudo docker" 
 alias nginx="sudo nginx"
 
 export NVM_DIR="$HOME/.nvm"
@@ -143,3 +143,5 @@ eval "$(pyenv init - bash)"
 
 source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.local/bin:$PATH"
+
+fastfetch

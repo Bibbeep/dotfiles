@@ -78,6 +78,8 @@ declare -a packages=(
 	gdbm-libs
 	libnsl2
 	golang
+	bear
+	doxygen
 )
 
 for package in ${packages[@]}; do
@@ -236,7 +238,7 @@ dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker
 systemctl enable --now docker
 
 # Add current user to docker group
-usermod -a -G docker $SUDO_USER
+usermod -aG docker $SUDO_USER
 newgrp docker
 
 echo "Docker Engine installed!"

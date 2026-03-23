@@ -48,7 +48,6 @@ set history=10000 incsearch
 set nojoinspaces laststatus=2 ruler
 set showcmd smarttab nostartofline
 set switchbuf=uselast wildmenu "wildoptions=pum,tagfile
-hi Normal guibg=NONE ctermbg=NONE
 
 " [[ Settings other options ]]
 " See `:help :set`
@@ -217,6 +216,10 @@ let g:tokyonight_style = 'night'    " available: night, storm
 let g:tokyonight_enable_italic = 0  " Disable italics in comments
 colorscheme tokyonight
 
+hi Normal guibg=NONE ctermbg=NONE
+hi NonText guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
+hi SignColumn guibg=NONE ctermbg=NONE 
 
 " [[ Configure vim-which-key ]]
 call which_key#register('<Space>', "g:which_key_map")
