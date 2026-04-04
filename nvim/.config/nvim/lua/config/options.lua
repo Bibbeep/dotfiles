@@ -13,7 +13,7 @@ vim.opt.breakindent = true
 
 -- Always show relative line numbers
 vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 
 -- Show line under cursor
 vim.opt.cursorline = true
