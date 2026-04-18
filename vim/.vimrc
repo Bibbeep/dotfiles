@@ -74,6 +74,12 @@ set clipboard=unnamedplus
 " Enable break indent
 set breakindent
 
+" Tab spaces
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
+
 " Save undo history
 "  By default, undo files (.file.txt.un~) are saved in the current directory.
 "  This makes the file system very messy, so undofile is disabled by default.
