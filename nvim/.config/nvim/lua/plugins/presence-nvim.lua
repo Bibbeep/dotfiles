@@ -1,5 +1,6 @@
 return {
 	"andweeb/presence.nvim",
+	enabled = false,
 	config = function()
 		-- The setup config table shows all available config options with their default values:
 		require("presence").setup({
