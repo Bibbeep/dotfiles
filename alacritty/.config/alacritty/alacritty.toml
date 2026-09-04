@@ -7,7 +7,7 @@ padding.y = 8
 
 blur = true
 decorations = "full"
-opacity = 0.7
+opacity = 0.85
 
 dimensions.columns = 100
 dimensions.lines = 32
@@ -15,6 +15,7 @@ dimensions.lines = 32
 [font]
 normal.family = "JetBrainsMono Nerd Font"
 size = 12
+offset = { x = 0, y = 2 }
 
 [keyboard]
 bindings = [

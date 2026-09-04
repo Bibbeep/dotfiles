@@ -145,3 +145,4 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.local/bin:$PATH"
 
 fastfetch
+export PATH="$HOME/.local/bin:$PATH"

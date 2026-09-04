@@ -19,3 +19,5 @@
 	name = Bibbeep
 [init]
 	defaultBranch = main
+[credential]
+	helper = store
